@@ -26,29 +26,32 @@
   <script src="https://kit.fontawesome.com/3c5669a9ad.js" crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+  
+  <!-- GSAP Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   <link rel="icon" href="https://www.letsjive.io/favicon.png" type="image/png" />
   <link rel="apple-touch-icon" href="https://www.letsjive.io/favicon.png" />
 
-      <link rel="canonical" href="https://www.letsjive.io/">
   </head>
 <body class="relative">
     <div class="flex flex-col min-h-screen h-full mx-auto overflow-hidden relative">
         <header class="relative">
-    <nav class="border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 relative z-50">
+    <nav class="border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 relative z-50 gsap-nav">
         <div class="grid grid-cols-3 items-center mx-auto max-w-screen-xl">
-            <div class="flex justify-start items-center col-span-1">
-                <a href="" class="text-primary-900 bg-white border border-gray-200 hover:bg-jive-yellow focus:ring-4 focus:ring-jive-teal-20 font-medium rounded-full text-sm md:text-base px-4 md:px-6 py-2 focus:outline-none md:hidden">Admin</a>
+            <div class="flex justify-start items-center col-span-1 gsap-nav-left">
+                <a href="" class="text-primary-900 bg-white border border-gray-200 hover:bg-jive-yellow focus:ring-4 focus:ring-jive-teal-20 font-medium rounded-full text-sm md:text-base px-4 md:px-6 py-2 focus:outline-none md:hidden gsap-btn">Admin</a>
             </div>
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center gsap-logo">
                 <a href="#" class="inline-block group/logo">
                     <img src="https://ik.imagekit.io/dr5fryhth/Adobe%20Express%20-%20file.png?updatedAt=1762746280976" class="h-8 md:h-10 group-hover/logo:hidden" alt="Jive" />
                     <img src="https://ik.imagekit.io/dr5fryhth/Adobe%20Express%20-%20file.png?updatedAt=1762746280976" class="h-8 md:h-10 hidden group-hover/logo:inline-block" alt="Jive" />
                 </a>
             </div>
-            <div class="flex justify-end items-center col-span-1">
-                <a href="" class="text-primary-900 bg-white border border-gray-200 hover:bg-jive-yellow focus:ring-4 focus:ring-jive-teal-20 font-medium rounded-full text-sm md:text-base px-4 md:px-6 py-2 focus:outline-none hidden md:flex">Admin</a>
-                <a href="" class="text-white bg-primary-900 hover:bg-jive-blue focus:ring-4 focus:ring-jive-teal/20 font-medium rounded-full text-sm md:text-base px-4 md:px-6 py-2 ml-2 focus:outline-none">Sign In</a>
+            <div class="flex justify-end items-center col-span-1 gsap-nav-right">
+                <a href="" class="text-primary-900 bg-white border border-gray-200 hover:bg-jive-yellow focus:ring-4 focus:ring-jive-teal-20 font-medium rounded-full text-sm md:text-base px-4 md:px-6 py-2 focus:outline-none hidden md:flex gsap-btn">Admin</a>
+                <a href="" class="text-white bg-primary-900 hover:bg-jive-blue focus:ring-4 focus:ring-jive-teal/20 font-medium rounded-full text-sm md:text-base px-4 md:px-6 py-2 ml-2 focus:outline-none gsap-btn">Sign In</a>
             </div>
         </div>
     </nav>
@@ -56,7 +59,7 @@
 
         
         <div class="flex-grow">
-            <div class="absolute top-0 bottom-0 mx-auto left-1/2 transform -translate-x-1/2 z-0 w-full md:w-[1200px] lg:w-[1600px] max-w-screen">
+            <div class="absolute top-0 bottom-0 mx-auto left-1/2 transform -translate-x-1/2 z-0 w-full md:w-[1200px] lg:w-[1600px] max-w-screen gsap-shapes">
   <img src="https://www.letsjive.io/images/marketing/home-shapes-full.svg" class="hidden lg:block w-full h-full object-cover" alt="Shapes" />
   <img src="https://www.letsjive.io/images/marketing/home-shapes-tablet.svg" class="hidden md:block w-full h-full object-cover" alt="Shapes" />
   <img src="https://www.letsjive.io/images/marketing/home-shapes-mobile.svg" class="md:hidden w-full h-full object-cover" alt="Shapes" />
@@ -65,50 +68,50 @@
   <div class="max-w-screen-xl px-6 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
     <div class="text-center">
       <div class="max-w-xl mx-auto">
-        <h1 class="text-5xl font-extrabold leading-none tracking-tight text-primary-900 dark:text-white md:text-7xl mb-6">
+        <h1 class="text-5xl font-extrabold leading-none tracking-tight text-primary-900 dark:text-white md:text-7xl mb-6 gsap-hero-title">
         Ticket Booking Made Simple</h1>
-        <p class="mt-4 text-lg md:text-xl font-normal text-primary-500 md:max-w-3xl md:mx-auto mb-6 md:mb-10">No more standing in long queues, stressing over ticket sales and missing out on your favorite events. <br> Get it all with this simple ticketing sytem!</p>
-        <a href="#" class="text-white bg-primary-900 hover:bg-jive-green focus:ring-4 focus:outline-none focus:ring-jive-teal/30 font-semibold rounded-full text-xl px-12 py-4 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 inline-block transition">Book Your Tickets Now</a>
+        <p class="mt-4 text-lg md:text-xl font-normal text-primary-500 md:max-w-3xl md:mx-auto mb-6 md:mb-10 gsap-hero-text">No more standing in long queues, stressing over ticket sales and missing out on your favorite events. <br> Get it all with this simple ticketing sytem!</p>
+        <a href="#" class="text-white bg-primary-900 hover:bg-jive-green focus:ring-4 focus:outline-none focus:ring-jive-teal/30 font-semibold rounded-full text-xl px-12 py-4 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 inline-block transition gsap-hero-btn">Book Your Tickets Now</a>
       </div>
     </div>
   </div>
   <div class="mt-8 sm:mt-16">
-    <div class="relative mx-auto max-w-[800px] w-auto">
+    <div class="relative mx-auto max-w-[800px] w-auto gsap-hero-image">
       <img src="https://ik.imagekit.io/dr5fryhth/Adobe%20Express%20-%20file%20(1).png?updatedAt=1762746825436" class="w-full" alt="Jive phones" />
     </div>
   </div>
 </section>
 <section class="relative">
   <div class="py-8 px-6 mx-auto max-w-screen-xl text-center sm:py-16 lg:px-6 lg:py-24">
-      <h2 class="mb-4 text-4xl max-w-[200px] mx-auto md:max-w-full tracking-tight font-extrabold text-primary-900">Here’s how it works</h2>
-      <p class="text-primary-500 font-normal text-lg md:text-xl">More booking, less stressing</p>
+      <h2 class="mb-4 text-4xl max-w-[200px] mx-auto md:max-w-full tracking-tight font-extrabold text-primary-900 gsap-features-title">Here's how it works</h2>
+      <p class="text-primary-500 font-normal text-lg md:text-xl gsap-features-subtitle">More booking, less stressing</p>
       <div class="my-8 lg:my-12 gap-8 flex flex-col md:flex-row flex-wrap md:gap-12 justify-center content-center justify-items-center">
-          <div class="max-w-[310px]">
-              <img src="https://www.letsjive.io/images/marketing/feature-1.svg" class="mx-auto mb-4 w-12 h-12" alt="Step 1" />
-              <h3 class="mb-2 text-2xl font-bold">Create an account/Log In</h3>
-              <p class="mb-4 text-primary-500 text-lg">Enter the system with the appropriate credentials in one easy setup.</p>
+          <div class="max-w-[310px] gsap-feature-card">
+              <img src="https://www.letsjive.io/images/marketing/feature-1.svg" class="mx-auto mb-4 w-12 h-12 gsap-feature-icon" alt="Step 1" />
+              <h3 class="mb-2 text-2xl font-bold gsap-feature-title">Create an account/Log In</h3>
+              <p class="mb-4 text-primary-500 text-lg gsap-feature-text">Enter the system with the appropriate credentials in one easy setup.</p>
           </div>
-          <div class="max-w-[310px]">
-              <img src="https://www.letsjive.io/images/marketing/feature-2.svg" class="mx-auto mb-4 w-12 h-12" alt="Step 2" />
-              <h3 class="mb-2 text-2xl font-bold">Select a Ticket Type</h3>
-              <p class="mb-4 text-primary-500 text-lg">Choose your type of ticket; VIP or Regular and pay in one easy step</p>
+          <div class="max-w-[310px] gsap-feature-card">
+              <img src="https://www.letsjive.io/images/marketing/feature-2.svg" class="mx-auto mb-4 w-12 h-12 gsap-feature-icon" alt="Step 2" />
+              <h3 class="mb-2 text-2xl font-bold gsap-feature-title">Select a Ticket Type</h3>
+              <p class="mb-4 text-primary-500 text-lg gsap-feature-text">Choose your type of ticket; VIP or Regular and pay in one easy step</p>
           </div>
-          <div class="max-w-[310px]">
-              <img src="https://www.letsjive.io/images/marketing/feature-3.svg" class="mx-auto mb-4 w-12 h-12" alt="Step 3" />
-              <h3 class="mb-2 text-2xl font-bold">Enjoy The Show</h3>
-              <p class="mb-4 text-primary-500 text-lg">You are good to go. Have Fun!</p>
+          <div class="max-w-[310px] gsap-feature-card">
+              <img src="https://www.letsjive.io/images/marketing/feature-3.svg" class="mx-auto mb-4 w-12 h-12 gsap-feature-icon" alt="Step 3" />
+              <h3 class="mb-2 text-2xl font-bold gsap-feature-title">Enjoy The Show</h3>
+              <p class="mb-4 text-primary-500 text-lg gsap-feature-text">You are good to go. Have Fun!</p>
           </div>
       </div>
-      <a href="" class="text-white bg-primary-900 hover:bg-jive-pink focus:ring-4 focus:outline-none focus:ring-jive-teal/30 font-semibold rounded-full text-xl px-12 py-4 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition inline-block">Get Your Ticket</a>
+      <a href="" class="text-white bg-primary-900 hover:bg-jive-pink focus:ring-4 focus:outline-none focus:ring-jive-teal/30 font-semibold rounded-full text-xl px-12 py-4 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition inline-block gsap-features-btn">Get Your Ticket</a>
   </div>
 </section>        </div>
 
         <footer class="p-4 md:p-8 lg:p-10 relative">
   <div class="mx-auto max-w-screen-xl text-center">
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center gsap-footer-title">
         <h3>Event Ticketing System</h3>
       </div>
-      <span class="text-sm text-gray-500 sm:text-center ">&copy; 2025 <a href="#" class="hover:text-jive-teal transition">Event Tickets</a> by <a href="https://omaribrightswe.dpdns.org/" class="hover:text-jive-pink transition" target="_blank"><u>Bright Omari Owusu</u></a></span>
+      <span class="text-sm text-gray-500 sm:text-center gsap-footer-text">&copy; 2025 <a href="#" class="hover:text-jive-teal transition">Event Tickets</a> by <a href="https://omaribrightswe.dpdns.org/" class="hover:text-jive-pink transition" target="_blank"><u>Bright Omari Owusu</u></a></span>
   </div>
 </footer>    </div>
 
@@ -276,6 +279,289 @@ var AlertModal = (function(settings) {
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 <script type="text/javascript" src="https://www.letsjive.io/includes/js/utm.js"></script>
+
+<!-- GSAP Animations -->
+<script type="text/javascript">
+// Register GSAP plugins
+gsap.registerPlugin(ScrollTrigger);
+
+// Set initial states for elements
+gsap.set('.gsap-nav-left', { opacity: 0, x: -50 });
+gsap.set('.gsap-logo', { opacity: 0, scale: 0.8 });
+gsap.set('.gsap-nav-right', { opacity: 0, x: 50 });
+gsap.set('.gsap-shapes', { opacity: 0, scale: 1.1 });
+gsap.set('.gsap-hero-title', { opacity: 0, y: 50 });
+gsap.set('.gsap-hero-text', { opacity: 0, y: 30 });
+gsap.set('.gsap-hero-btn', { opacity: 0, y: 20, scale: 0.9 });
+gsap.set('.gsap-hero-image', { opacity: 0, y: 80, scale: 0.95 });
+gsap.set('.gsap-features-title', { opacity: 0, y: 30 });
+gsap.set('.gsap-features-subtitle', { opacity: 0, y: 20 });
+gsap.set('.gsap-feature-card', { opacity: 0, y: 50, scale: 0.9 });
+gsap.set('.gsap-features-btn', { opacity: 0, y: 20 });
+gsap.set('.gsap-footer-title', { opacity: 0, y: 20 });
+gsap.set('.gsap-footer-text', { opacity: 0, y: 10 });
+
+// Navigation animation on page load
+gsap.timeline({ delay: 0.2 })
+    .to('.gsap-nav-left', { opacity: 1, x: 0, duration: 0.6, ease: 'power3.out' })
+    .to('.gsap-logo', { opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(1.7)' }, '-=0.3')
+    .to('.gsap-nav-right', { opacity: 1, x: 0, duration: 0.6, ease: 'power3.out' }, '-=0.5');
+
+// Background shapes animation
+gsap.to('.gsap-shapes', {
+    opacity: 1,
+    scale: 1,
+    duration: 1.5,
+    ease: 'power2.out',
+    delay: 0.3
+});
+
+// Hero section animation
+gsap.timeline({ delay: 0.5 })
+    .to('.gsap-hero-title', {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power3.out'
+    })
+    .to('.gsap-hero-text', {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        ease: 'power2.out'
+    }, '-=0.4')
+    .to('.gsap-hero-btn', {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.6,
+        ease: 'back.out(1.4)'
+    }, '-=0.3')
+    .to('.gsap-hero-image', {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1,
+        ease: 'power2.out'
+    }, '-=0.2');
+
+// Features section scroll-triggered animation
+gsap.timeline({
+    scrollTrigger: {
+        trigger: '.gsap-features-title',
+        start: 'top 80%',
+        end: 'top 50%',
+        toggleActions: 'play none none none'
+    }
+})
+    .to('.gsap-features-title', {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        ease: 'power2.out'
+    })
+    .to('.gsap-features-subtitle', {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: 'power2.out'
+    }, '-=0.3')
+    .to('.gsap-feature-card', {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.6,
+        stagger: 0.15,
+        ease: 'back.out(1.2)'
+    }, '-=0.2')
+    .to('.gsap-features-btn', {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: 'power2.out'
+    }, '-=0.3');
+
+// Feature card hover animations
+document.querySelectorAll('.gsap-feature-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        gsap.to(this, {
+            scale: 1.05,
+            y: -10,
+            duration: 0.3,
+            ease: 'power2.out'
+        });
+        gsap.to(this.querySelector('.gsap-feature-icon'), {
+            rotation: 360,
+            scale: 1.2,
+            duration: 0.5,
+            ease: 'back.out(1.7)'
+        });
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        gsap.to(this, {
+            scale: 1,
+            y: 0,
+            duration: 0.3,
+            ease: 'power2.out'
+        });
+        gsap.to(this.querySelector('.gsap-feature-icon'), {
+            rotation: 0,
+            scale: 1,
+            duration: 0.3,
+            ease: 'power2.out'
+        });
+    });
+});
+
+// Button hover animations
+document.querySelectorAll('.gsap-btn, .gsap-hero-btn, .gsap-features-btn').forEach(btn => {
+    btn.addEventListener('mouseenter', function() {
+        gsap.to(this, {
+            scale: 1.05,
+            y: -2,
+            duration: 0.2,
+            ease: 'power2.out'
+        });
+    });
+    
+    btn.addEventListener('mouseleave', function() {
+        gsap.to(this, {
+            scale: 1,
+            y: 0,
+            duration: 0.2,
+            ease: 'power2.out'
+        });
+    });
+    
+    btn.addEventListener('mousedown', function() {
+        gsap.to(this, {
+            scale: 0.95,
+            duration: 0.1,
+            ease: 'power2.out'
+        });
+    });
+    
+    btn.addEventListener('mouseup', function() {
+        gsap.to(this, {
+            scale: 1.05,
+            duration: 0.1,
+            ease: 'power2.out'
+        });
+    });
+});
+
+// Footer animation function
+function animateFooter() {
+    gsap.to('.gsap-footer-title', {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: 'power2.out'
+    });
+    gsap.to('.gsap-footer-text', {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: 'power2.out',
+        delay: 0.2
+    });
+}
+
+// Footer scroll-triggered animation
+ScrollTrigger.create({
+    trigger: 'footer',
+    start: 'top 90%',
+    onEnter: animateFooter,
+    once: true
+});
+
+// Ensure footer appears - check on page load and after a short delay
+function ensureFooterVisible() {
+    const footerTitle = document.querySelector('.gsap-footer-title');
+    if (footerTitle) {
+        const rect = footerTitle.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        const computedStyle = window.getComputedStyle(footerTitle);
+        const isHidden = computedStyle.opacity === '0' || parseFloat(computedStyle.opacity) < 0.1;
+        
+        // If footer is in viewport but still hidden, animate it
+        if (isVisible && isHidden) {
+            animateFooter();
+            return true;
+        }
+    }
+    return false;
+}
+
+// Check immediately
+if (!ensureFooterVisible()) {
+    // Check after DOM is fully loaded
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                if (!ensureFooterVisible()) {
+                    // Final fallback - show footer after 1.5 seconds
+                    setTimeout(animateFooter, 1500);
+                }
+            }, 300);
+        });
+    } else {
+        setTimeout(() => {
+            if (!ensureFooterVisible()) {
+                setTimeout(animateFooter, 1500);
+            }
+        }, 300);
+    }
+}
+
+// Continuous subtle animation for background shapes
+gsap.to('.gsap-shapes', {
+    y: '+=20',
+    duration: 8,
+    ease: 'sine.inOut',
+    repeat: -1,
+    yoyo: true
+});
+
+// Logo hover animation
+document.querySelector('.gsap-logo a').addEventListener('mouseenter', function() {
+    gsap.to(this, {
+        scale: 1.1,
+        rotation: 5,
+        duration: 0.3,
+        ease: 'back.out(1.7)'
+    });
+});
+
+document.querySelector('.gsap-logo a').addEventListener('mouseleave', function() {
+    gsap.to(this, {
+        scale: 1,
+        rotation: 0,
+        duration: 0.3,
+        ease: 'power2.out'
+    });
+});
+
+// Smooth scroll behavior enhancement
+gsap.utils.toArray('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && href !== '') {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                const offset = 80;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+});
+</script>
 
 <script type="text/javascript">	
 $(document).ready(function() {
