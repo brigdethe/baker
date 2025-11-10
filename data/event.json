@@ -1,0 +1,11 @@
+{
+  "event_id": "970c3d2b-4b73-4a4c-8cea-04dcd5e356c7",
+  "name": "Bitches",
+  "vip_quantity": 500,
+  "vip_price": 400.0,
+  "regular_quantity": 1000,
+  "regular_price": 200.0,
+  "vip_sold": 0,
+  "regular_sold": 0,
+  "created_at": "2025-11-09T23:11:50.174458"
+}

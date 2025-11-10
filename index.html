@@ -24,8 +24,6 @@
   <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
   <script src="https://kit.fontawesome.com/3c5669a9ad.js" crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
   
   <!-- GSAP Animation Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -70,7 +68,7 @@
       <div class="max-w-xl mx-auto">
         <h1 class="text-5xl font-extrabold leading-none tracking-tight text-primary-900 dark:text-white md:text-7xl mb-6 gsap-hero-title">
         Ticket Booking Made Simple</h1>
-        <p class="mt-4 text-lg md:text-xl font-normal text-primary-500 md:max-w-3xl md:mx-auto mb-6 md:mb-10 gsap-hero-text">No more standing in long queues, stressing over ticket sales and missing out on your favorite events. <br> Get it all with this simple ticketing sytem!</p>
+        <p class="mt-4 text-lg md:text-xl font-normal text-primary-500 md:max-w-3xl md:mx-auto mb-6 md:mb-10 gsap-hero-text">No more standing in long queues, stressing over ticket sales and missing out on your favorite events. <br> Get it all with this simple ticketing system!</p>
         <a href="#" class="text-white bg-primary-900 hover:bg-jive-green focus:ring-4 focus:outline-none focus:ring-jive-teal/30 font-semibold rounded-full text-xl px-12 py-4 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 inline-block transition gsap-hero-btn">Book Your Tickets Now</a>
       </div>
     </div>
@@ -115,91 +113,7 @@
   </div>
 </footer>    </div>
 
-<script type="text/javascript">
-var ConfirmModal = (function(settings) {
-    return {
-        headline: settings.headline,
-        message: settings.message,
-        buttons: settings.buttons,
-        _modal: null,
-        open: function() {
-            var modal = $('#confirm_modal');
-
-            if (this.headline != undefined) {
-                $(modal).find('.confirm-headline').html(this.headline);
-            }
-
-            if (this.message != undefined) {
-                $(modal).find('.confirm-message').html(this.message);
-            }
-
-            if (this.buttons != undefined) {
-                if (this.buttons.confirm != undefined) {
-                    $(modal).find('.confirm-button-confirm').html(this.buttons.confirm);
-                }
-
-                if (this.buttons.cancel != undefined) {
-                    $(modal).find('.confirm-button-cancel').html(this.buttons.cancel);
-                }
-            }
-
-            var scope = this;
-            $(modal).find('.confirm-button-confirm').unbind('click').click(function(e) {
-                scope.confirm();
-            });
-
-            $(modal).find('.confirm-button-cancel').unbind('click').click(function(e) {
-                scope.cancel();
-            });
-
-            $(modal).find('.confirm-button-close').unbind('click').click(function(e) {
-                scope.close();
-            });
-
-            this._modal = new Modal(document.getElementById('confirm_modal'));
-            this._modal.show();
-        },
-        close: function() {
-            this._modal.hide();
-        },
-        confirm: function() {
-            if (settings.confirm != undefined) {
-              settings.confirm();
-            }
-
-            this.close();
-        },
-        cancel: function() {
-            if (settings.cancel != undefined) {
-              settings.cancel();
-            }
-
-            this.close();
-        }
-    };
-});
-
-$(document).ready(function() {
-    $('.confirm-link').unbind('click').click(function(e) {
-        e.stopPropagation();
-        e.preventDefault();
-
-        var link = this;
-
-        ConfirmModal({
-            headline: $(link).data('confirm-headline') ?? 'Please Confirm',
-            message: $(link).data('confirm-message'),
-            buttons: {
-                confirm: $(link).data('confirm-button-confirm') ?? 'Confirm',
-                cancel: $(link).data('confirm-button-cancel') ?? 'Cancel'
-            },
-            confirm: function(e) {
-                window.location = link.href;
-            }
-        }).open();
-    });
-});
-</script>    <div id="alert_modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full" role="dialog">
+    <div id="alert_modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full" role="dialog">
     <div class="relative w-full h-full max-w-lg md:h-auto">
         <!-- Modal content -->
         <div class="relative bg-white text-gray-900 rounded-lg shadow dark:bg-gray-700 dark:text-white">
@@ -568,10 +482,6 @@ $(document).ready(function() {
     $('.auto-grow').keyup(function(e) {
         $(this).height(this.scrollHeight - parseFloat($(this).css("paddingTop")) - parseFloat($(this).css("paddingBottom")));
     }).keyup(); 
-	
-	if (window.location.hash != '') {
-		Foundation.SmoothScroll.scrollToLoc(window.location.hash);	
-	}
 
     $('form').submit(function() {
         $(this).find('input[type=submit]').prop('disabled', true);

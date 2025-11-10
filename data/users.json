@@ -1,0 +1,22 @@
+{
+  "4655572b-d639-4564-9545-94d1e293dbcd": {
+    "user_id": "4655572b-d639-4564-9545-94d1e293dbcd",
+    "first_name": "Admin",
+    "last_name": "User",
+    "email": "admin@eventtickets.com",
+    "phone": "0000000000",
+    "password_hash": "7c075f52dbf44709bb0123f693e71b24$a44c06a62655ed62829c365af65218b0eeb613e248ae3bb5006091b5c0786000",
+    "is_admin": true,
+    "created_at": "2025-11-09T22:55:21.974988"
+  },
+  "3263feb3-3d56-4b2a-9ab2-2a610c602a8c": {
+    "user_id": "3263feb3-3d56-4b2a-9ab2-2a610c602a8c",
+    "first_name": "Bright",
+    "last_name": "Owusu",
+    "email": "owusuomari2@gmail.com",
+    "phone": "3182654279",
+    "password_hash": "7605454c02dc42258286e1db26415ec5$4ada5b62dc28899afc1c854f7779cf6a98da906e99173022ca756d6366d931d3",
+    "is_admin": false,
+    "created_at": "2025-11-09T23:10:56.846978"
+  }
+}

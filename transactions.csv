@@ -1,0 +1,6 @@
+timestamp,user_id,email,ticket_type,action,status,price,message
+2025-11-09T23:10:56.854582,3263feb3-3d56-4b2a-9ab2-2a610c602a8c,owusuomari2@gmail.com,N/A,register,success,$0.00,User registered: owusuomari2@gmail.com
+2025-11-09T23:11:02.918895,3263feb3-3d56-4b2a-9ab2-2a610c602a8c,owusuomari2@gmail.com,N/A,login,success,$0.00,User logged in: owusuomari2@gmail.com
+2025-11-09T23:11:26.990288,4655572b-d639-4564-9545-94d1e293dbcd,admin@eventtickets.com,N/A,login,success,$0.00,User logged in: admin@eventtickets.com
+2025-11-09T23:11:50.179144,4655572b-d639-4564-9545-94d1e293dbcd,admin@eventtickets.com,N/A,create_event,success,$0.00,Created event: Bitches
+2025-11-09T23:12:09.513483,3263feb3-3d56-4b2a-9ab2-2a610c602a8c,owusuomari2@gmail.com,N/A,login,success,$0.00,User logged in: owusuomari2@gmail.com
